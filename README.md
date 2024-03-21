@@ -11,9 +11,19 @@ A Go-based tool to package AWS Lambda functions along with their dependencies in
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/4cecoder/lamdazip.git`
+### Option 1: Go Install
 
+If you have Go installed on your system, you can use `go install` to install the Lambda Function Packager.
+
+1. Run the following command: `go install github.com/4cecoder/lamdazip@latest`
+
+2. The `lamdazip` executable will be installed in your `$GOPATH/bin` directory.
+
+### Option 2: Manual Installation
+1. Clone the repository: `git clone https://github.com/4cecoder/lamdazip.git`
+ 
 2. Change into the project directory: `cd lamdazip`
+ 
 3. Build the executable: `go build`
 
 ## Configuration
