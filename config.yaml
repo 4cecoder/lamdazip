@@ -1,0 +1,6 @@
+function_names:
+  - cold_rail
+  - new_customer
+  - updated_customer
+site_packages_dir: venv/Lib/site-packages
+dest_dir: terraform/dev/lambda
