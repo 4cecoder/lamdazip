@@ -46,8 +46,13 @@ dest_dir: terraform/dev/lambda
     site_packages_dir: The directory path of the virtual environment's site-packages.
     dest_dir: The destination directory where the packaged Lambda functions will be moved.
 
-You can create a configuration file with a different name or location and specify its path using the --config flag when running the tool.
-Usage
+You can create a configuration file with a different name or location and specify its path using the `--config` flag when running the tool.
+Usage:`
+
+If you want to use a different configuration file, specify its path using the `--config` flag:
+```bash
+./lamdazip --config path/to/config.yaml
+```
 
 To package Lambda functions, run the following command:
 
@@ -56,10 +61,7 @@ To package Lambda functions, run the following command:
 ```
 
 
-If you want to use a different configuration file, specify its path using the --config flag:
-```bash
-./lamdazip --config path/to/config.yaml
-```
+
 
 The tool will package each Lambda function specified in the configuration file along with its dependencies into separate zip files. The zip files will be moved to the corresponding directories under the specified destination directory.
 Project Structure
